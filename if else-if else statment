@@ -1,0 +1,23 @@
+void main(){
+
+  int passMark = 39;
+
+  if(passMark >= 80){
+       print("A+");
+  }
+  else if(passMark >= 70){
+    print("A");
+  }
+  else if(passMark >= 60){
+    print("A-");
+  }
+  else if(passMark >= 50){
+    print("B");
+  }
+  else if(passMark >= 40){
+    print("D");
+  }
+  else{
+    print("Fail in the exam ...");
+  }
+}
