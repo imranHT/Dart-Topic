@@ -14,3 +14,27 @@ void main(){
 
   print("This is my frist Dart code . Operators..i will make big project..");
 }
+-------------------------------------------------------
+
+//Variables
+
+void main(){
+
+  String name = "Imran Hasan";
+  int age = 24;
+  String address = "Mirpur-1, Dhaka";
+  String school = "Prime University";
+  double cgpa = 3.84;
+  bool isStudent = true;
+
+
+
+  print(name);
+  print(age);
+  print(address);
+  print(school);
+  print(cgpa);
+  print(isStudent);
+  
+
+}
