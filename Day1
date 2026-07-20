@@ -1,0 +1,16 @@
+void main(){
+
+  var x = 10;
+  var y = 20;
+  var z = x+y;
+  var d = x-y;
+  var c  = x*y;
+  var e = x/y;
+
+  print(z);
+  print(d);
+  print(c);
+  print(e);
+
+  print("This is my frist Dart code . Operators..i will make big project..");
+}
