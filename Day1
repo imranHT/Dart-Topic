@@ -130,3 +130,11 @@ print(a--);
 
 }
 -------------------------------
+void main(){
+
+
+  const name = "Imran"; //constant/final value . never change 
+  
+  print(name);
+
+}
