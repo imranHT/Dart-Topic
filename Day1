@@ -154,3 +154,15 @@ void main(){
    var result = name.single; //work when there is 1 single value
   print(result);
 }
+-----------------------------------------
+void main(){
+
+
+  var city = {'Dhaka','Rajshahi','Khulna','Chattagram'};
+
+  city.add('Bagura');
+  city.add('Cumilla');
+  city.add('Cox-Bazar');
+  print(city);
+}
+
