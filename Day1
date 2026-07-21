@@ -83,3 +83,50 @@ void main(){
 
 }
 ---------------------------
+void main(){
+
+
+
+  var x = 10;
+
+  print(x++);
+  print(x++);
+  print(x++);
+  print(x++);
+  print(x++);
+
+
+
+
+}
+-----------------------------
+
+void main(){
+
+
+  var a = 10;
+
+  print(++a);
+  print(++a);
+  print(++a);
+  print(++a); 
+
+
+
+}
+------------------------
+
+void main(){
+
+
+  var a = 10;
+
+print(a--);
+  print(a--);
+  print(a--);
+  print(a--);
+  print(a--);
+
+
+}
+-------------------------------
