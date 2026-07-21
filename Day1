@@ -138,3 +138,19 @@ void main(){
   print(name);
 
 }
+
+// List Proparties
+
+void main(){
+
+
+  var name = {'Imran','Mim','Mahmuda','Ariba','Abida','Sumaiya'};
+
+  var result = name.length;
+  var result = name.first;
+   var result  = name.last;
+  var result = name.isEmpty;
+  var result = name.isNotEmpty;
+   var result = name.single; //work when there is 1 single value
+  print(result);
+}
