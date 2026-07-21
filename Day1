@@ -38,3 +38,13 @@ void main(){
   
 
 }
+
+-------------------------
+void main(){
+  //list
+
+  var name = ['Imran','Mim','Hasan','Mahmuda','Ariba'];
+
+
+  print(name[4]);
+}
