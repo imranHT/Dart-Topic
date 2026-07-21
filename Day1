@@ -48,3 +48,18 @@ void main(){
 
   print(name[4]);
 }
+-----------------------------
+
+void main(){
+
+  var person={
+      'Name':'Imran Hasan',
+     'Age':24,
+     'Address':'Mirpur-1',
+     'Education':'Bsc in Cse',
+     'school': 'Prime University',
+      'cgpa':3.84,
+  };
+
+  print(person['cgpa']);
+}
