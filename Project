@@ -1,1 +1,53 @@
 
+//updating,adding and removing active,inactive student id..
+
+void main(){
+
+
+  print("=========================================");
+  print("Prime University");
+  print("=========================================");
+  print("Welcome to prime University student program");
+  print("===========================================");
+  print("62 Batch,CSE");
+
+  print("Id- 1001,1102,1003,1004,1005,1006,1007,1008,1009,1111");
+
+  var studentId = [1001,1102,1003,1004,1005,1006,1007,1008,1009,1111];
+
+  //updating a wrong id 1111
+  print("----------------------------------------------------------");
+print("Updated data :- 1111,1102");
+  studentId[9] = 1010;
+  studentId[1] = 1002;
+  print(studentId);
+
+print("--------------------------------------------------------");
+  //removing 3 id (1004,1005,1006)for not attend in class
+print("Id removed :- 1004,1005,1006");
+  studentId.remove(1004);
+  studentId.remove(1005);
+  studentId.remove(1006);
+
+  print(studentId);
+
+  print("--------------------------------------------------------");
+
+  //adding 3 new student id 1012,1014,1016
+print("Added :- 1012,1014,1016");
+  studentId.add(1012);
+  studentId.add(1014);
+  studentId.add(1016);
+
+  print(studentId);
+
+
+  print("Here the Final Data::- [1001, 1002, 1003, 1007, 1008, 1009, 1010, 1012, 1014, 1016]");
+
+
+
+
+
+
+
+}
