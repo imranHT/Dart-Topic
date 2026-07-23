@@ -24,3 +24,18 @@ void main(){
 ------------------------------------------------------------------------
 
 //removing 
+//removing number
+
+void main(){
+
+
+  var number = [10,20,32,43,543,32,21,1111112,232];
+
+
+ number.removeLast(); //removing last value
+  number.removeAt(7); //0-9 number using for removeing a value;
+  number.remove(1111112);//removing initial number 
+
+
+  print(number);
+}
