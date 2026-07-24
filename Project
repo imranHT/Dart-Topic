@@ -66,3 +66,175 @@ Id removed :- 1004,1005,1006
 Added :- 1012,1014,1016
 [1001, 1002, 1003, 1007, 1008, 1009, 1010, 1012, 1014, 1016]
 Here the Final Data::- [1001, 1002, 1003, 1007, 1008, 1009, 1010, 1012, 1014, 1016]
+
+
+
+-----------------------------------------------------------------------------------------
+
+project 2 ...list using
+
+//Project using list in Dart
+
+void main() {
+  print("Prime University");
+  print("===================================");
+  print("Student Portal");
+  print("===================================");
+  print("CSE Department");
+  print("====================================");
+  print("62 Batch Total Student and there Cgpa");
+  print("====================================");
+
+
+  var studentName = <String>[
+    "Imran Hasan",
+    "Tonmoy Hasan",
+    "Sabrina Momo",
+    "Nowshin Shams",
+    "Shawon Mridha",
+    "Arko Raihan",
+    "Mahmudul Hasan",
+    "Ruhul Amin",
+    "Hamim Reza",
+    "Rashed Hossien",
+  ];
+
+  var studentId = <int>[
+    1001,
+    1003,
+    1009,
+    1010,
+    1012,
+    1014,
+    1016,
+    1017,
+    1019,
+    1020,
+  ];
+
+  var studentCgpa = <double>[
+    3.85,
+    3.45,
+    3.34,
+    3.20,
+    3.70,
+    3.89,
+    3.76,
+    3.89,
+    3.74,
+    3.67,
+
+  ];
+  print("Total Students : ${studentName.length}");
+  print("");
+  for (int i = 0; i < studentName.length; i++) {
+    print("Name :- ${studentName[i]}");
+    print("ID :- ${studentId[i]}");
+    print("CGPA :- ${studentCgpa[i]}");
+    print("--------------------------");
+  }
+
+  double totalCgpa = 0;
+
+  for (double cgpa in studentCgpa) {
+    totalCgpa += cgpa;
+  }
+
+  double averageCgpa = totalCgpa / studentCgpa.length;
+  print("\nAverage CGPA : $averageCgpa");
+
+  double hightCgpa = studentCgpa[0];
+  int hightIndex = 0;
+
+  for (int i = 0; i < studentCgpa.length; i++) {
+    if (studentCgpa[i] > hightCgpa) {
+      hightCgpa = studentCgpa[i];
+      hightIndex = i;
+    }
+  }
+
+
+  print("Hight Cgpa");
+
+  print("Name : ${studentName[hightIndex]}");
+  print("ID : ${studentId[hightIndex]}");
+  print("CGPA : ${studentCgpa[hightIndex]}");
+
+  print("Scholorship Program");
+  print("---------------------");
+
+
+  for(int i = 0; i< studentCgpa.length; i++){
+    if(studentCgpa[i] >= 3.70){
+      print("${studentName[i]} --- ${studentCgpa[i]}");
+    }
+  }
+}
+
+// output
+
+Prime University
+===================================
+Student Portal
+===================================
+CSE Department
+====================================
+62 Batch Total Student and there Cgpa
+====================================
+Total Students : 10
+
+Name :- Imran Hasan
+ID :- 1001
+CGPA :- 3.85
+--------------------------
+Name :- Tonmoy Hasan
+ID :- 1003
+CGPA :- 3.45
+--------------------------
+Name :- Sabrina Momo
+ID :- 1009
+CGPA :- 3.34
+--------------------------
+Name :- Nowshin Shams
+ID :- 1010
+CGPA :- 3.2
+--------------------------
+Name :- Shawon Mridha
+ID :- 1012
+CGPA :- 3.7
+--------------------------
+Name :- Arko Raihan
+ID :- 1014
+CGPA :- 3.89
+--------------------------
+Name :- Mahmudul Hasan
+ID :- 1016
+CGPA :- 3.76
+--------------------------
+Name :- Ruhul Amin
+ID :- 1017
+CGPA :- 3.89
+--------------------------
+Name :- Hamim Reza
+ID :- 1019
+CGPA :- 3.74
+--------------------------
+Name :- Rashed Hossien
+ID :- 1020
+CGPA :- 3.67
+--------------------------
+
+Average CGPA : 3.649
+Hight Cgpa
+Name : Arko Raihan
+ID : 1014
+CGPA : 3.89
+Scholorship Program
+---------------------
+Imran Hasan --- 3.85
+Shawon Mridha --- 3.7
+Arko Raihan --- 3.89
+Mahmudul Hasan --- 3.76
+Ruhul Amin --- 3.89
+Hamim Reza --- 3.74
+
