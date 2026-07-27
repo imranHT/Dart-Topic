@@ -28,3 +28,25 @@ void main(){
   print(id.isEmpty);
   print(id.isNotEmpty);
 }
+---------------------------------------------------
+
+//Map topic
+
+void main() {
+
+  Map <String,dynamic> userData= {
+
+    "userId":1001,
+    "userName":"Imran Hasan",
+    "userAddress":"Sirajgong",
+    "userNumber":000000000,
+    "userGender": "Male",
+    "userAge": 24,
+    "userEmail" : "ImranHasan.pu@gmail.com",
+
+  };
+//print(userData);
+//print(userData["userId"]);
+print(userData["userEmail"]);
+
+}
