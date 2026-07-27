@@ -10,3 +10,21 @@ void main(){
 
   print(id);
 }
+------------------------------------------------
+
+//Map topic
+
+void main(){
+
+  var id = new Map();
+  id["name"] = "Imran";
+  id["address"]="Sirajgong";
+  id["education"] = "Bsc in cse";
+  id["city"] = "Ullapra";
+
+  print(id.keys);
+  print(id.values);
+  print(id.length);
+  print(id.isEmpty);
+  print(id.isNotEmpty);
+}
