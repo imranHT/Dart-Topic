@@ -1,0 +1,12 @@
+//Map topic
+
+void main(){
+
+  var id = new Map();
+  id["name"] = "Imran";
+  id["address"]="Sirajgong";
+  id["education"] = "Bsc in cse";
+  id["city"] = "Ullapra";
+
+  print(id);
+}
