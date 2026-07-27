@@ -50,3 +50,20 @@ void main() {
 print(userData["userEmail"]);
 
 }
+----------------------------------------------------------
+
+void main(){
+
+  Map<String, dynamic> data ={
+     "name":"Imran Hasan",
+    "Age":24,
+    "Address":"Mirpur-1",
+    "email":"imran@gmail.com",
+
+  };
+  //data.addAll({'home':'Ullapara'});
+ // data.clear();
+  //data.remove("email");
+  //data.addAll({'number':017414141,'fatherName':"Shafiqul Islam"});
+  print(data);
+}
