@@ -21,3 +21,32 @@ void main(){
     print("Fail in the exam ...");
   }
 }
+------------------------------------------
+
+
+
+void main(){
+
+
+  var marks = 32;
+
+
+  if(marks >= 80){
+    print("You Got A+");
+  }else if(marks<80 && marks>=70){
+    print("You Got A");
+  }else if(marks<70 && marks >= 60){
+    print("You Got A-");
+  }else if(marks<60 && marks >= 50){
+    print("You Got B");
+  }else if(marks < 60 && marks >= 40){
+    print("You Got C");
+  }else if(marks < 40 && marks >= 33){
+    print("You Got D");
+  }
+  else{
+    print("You Got F . That mean fail .. ");
+  }
+
+
+}
