@@ -238,3 +238,51 @@ Mahmudul Hasan --- 3.76
 Ruhul Amin --- 3.89
 Hamim Reza --- 3.74
 
+
+
+------------------------------------------------
+
+
+
+
+ void main(){
+
+
+
+  String position = "Student";
+
+  switch(position){
+
+    case "Admin":
+      print("Full Access in the site as Admin");
+      break;
+
+    case "Teacher":
+      print("Access Only Submit Numbers as Teacher");
+      break;
+
+
+    case "Student":
+      print("Access Only see exam result as a student");
+      break;
+
+    case "DataAnalysis":
+      print("Access for entering all type of University Data as Data Analysis");
+      break;
+
+    case "Accountant ":
+      print("Access only for Financial section as Accountant");
+      break;
+
+    case "VC":
+      print("Access for watching every data as Vice Chancellor");
+      break;
+
+      default:
+        print("Who are you .. No data is found---Access Denied");
+        break;
+
+
+  }
+
+ }
