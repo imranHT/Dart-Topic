@@ -17,3 +17,25 @@ void main(){
     print(number);
   }
 }
+
+---------------------------------
+
+// for in loop
+
+
+void main() {
+
+  var alphabetList = [
+    ['A','B','C','D'],
+    ['E','F','G','H'],
+    ['I','J','K','L'],
+    ['M','N','O','P'],
+    ['Q','R','S','T'],
+    ['U','V','W','X'],
+    ['Y','Z']
+  ];
+
+  for (var oneAlphabet in alphabetList) {
+    print(oneAlphabet);
+  }
+}
