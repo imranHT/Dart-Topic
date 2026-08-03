@@ -283,6 +283,34 @@ Hamim Reza --- 3.74
         break;
 
 
+
+---------------------------------------------------------------------
+
+
+
+
+ void main(){
+
+
+   List<Map<String,dynamic>> students = [
+
+     {"ID :-":1001,"Name:-": "Imran Hasan"},
+     {"ID :-":1003,"Name:-": "Toufiq Hossen"},
+     {"ID :-":1009,"Name:-": "Sabrina Momo"},
+    {"ID :-":1010,"Name:-": "Nowshin sams"},
+     {"ID :-":1012,"Name:-": "Shawon Mridha"}
+
+
+   ];
+
+
+  for(int i = 0; i<students.length; i++){
+   print("ID:${students[i]["ID :-"]}, Name: ${students[i]["Name:-"]}");
+ }
+
+
+ }
+
   }
 
  }
