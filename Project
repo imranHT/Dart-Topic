@@ -342,5 +342,33 @@ void main(){
   }
 
 }
+=======================================================================
+// a project that use function -----
 
+void main() {
+  var product = [
+    {"name": "YAMAHA ","model":"R15 V4", "price": 600000},
+    {"name": "SUZUKI Gixxer", "model": "sf250", "price": 450000},
+    {"name": "Royal Enfield", "model": "Classic 350", "price": 450000},
+    {"name": "CF Moto", "model": "SR 300", "price": 500000},
+  ];
+
+  for (var bike in product) {
+    double finalPrice = calculateDiscount(bike["price"] as int);
+
+    print("======================================================");
+    print("Talukdar Motor's");
+    print("======================================================");
+    print("Product : ${bike["name"]}");
+    print("Model : ${bike["model"] ?? "N/A"}");
+    print("Price ${bike["price"]}");
+    print("After Discount: ${finalPrice.toStringAsFixed(2)}");
+ 
+  }
+}
+  double calculateDiscount(int price){
+  double discount = price * 0.10;
+   return price - discount;
+   
+}
 
