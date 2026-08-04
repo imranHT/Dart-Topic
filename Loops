@@ -80,7 +80,7 @@ void main(){
   var phoneList = [
     {"Name":"IQOO z10x","Price":27000},
     {"Name":"IQOO 15","Price":56000},
-    {"Name":"SUMSUNG S26 Ultra","Price":125000},
+    {"Name":"SUMSUNG S26 Ultra","Price":156000},
     {"Name":"Iphone 17 pro max","Price":130000},
     {"Name":"Vivo x300", "Price":80000},
     {"Name":"Xiaomi 17 pro","Price":90000},
