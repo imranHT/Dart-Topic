@@ -1,0 +1,39 @@
+function
+
+
+addTwoNumber(int x, int y){
+  print(x+y);
+}
+void main(){
+
+  addTwoNumber(10, 20);
+}
+------------------------
+name (String name){
+  print(name);
+}
+void main(){
+
+  name("Imran Hasan");
+}
+-----------------------------
+
+value(String name, int x,int y){
+
+  print(name);
+  print(x+y);
+}
+void main(){
+  value("Imran HAsan", 10,20);
+}
+---------------------------------
+
+addNumber (int x,double y){
+  return x+y;
+}
+
+void main(){
+  var result = addNumber(10, 20.5);
+  print(result);
+}
+-------------------------------------
