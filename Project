@@ -372,3 +372,71 @@ void main() {
    
 }
 
+----------------------------------------------------------------------------------------
+
+class
+-------
+
+class MyClass {
+
+int id;
+String name;
+String model;
+int price;
+
+MyClass({
+  required this.id,
+  required this.name,
+  required this.model,
+  required this.price,
+});
+
+
+@override
+  String toString(){
+  return "ID: $id, Name: $name, Model: $model, Price: $price";
+}
+}
+
+//main class
+
+
+import"MyClass.dart";
+
+void main(){
+   print("======================================");
+       print("Talukdar Mobile shop");
+   print("======================================");
+    print("Today Top 5 Phone Discount List");
+   print("======================================");
+
+
+ List<MyClass> phones = [
+
+   MyClass(id: 101, name: "Vivo", model: "X300", price: 80000),
+
+   MyClass(id: 102, name: "IQOO", model: "Z10x", price: 27000),
+
+   MyClass(id: 103, name: "Samsung", model: "S26 Ultra", price: 125000),
+
+   MyClass(id: 104, name: "iPhone", model: "17 Pro Max", price: 130000),
+
+   MyClass(id: 105, name: "Xiaomi", model: "17 Pro", price: 90000),
+
+
+
+ ];
+ for(var phone in phones){
+   print(phone);
+ }
+
+}
+
+---------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
