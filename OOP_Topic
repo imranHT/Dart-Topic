@@ -1,0 +1,27 @@
+//Main file
+
+import"MyClass.dart";
+
+void main(){
+
+
+  var obj = MyClass();
+  obj.addTwoNumber(10, 20);
+   print(obj.myName);
+   print(obj.myAge);
+}
+-----
+subClass
+
+class MyClass{
+
+  var myName  = "Imran Hasan";
+  var myAge = 24;
+
+
+  addTwoNumber(int x, int y){
+    print(x+y);
+  }
+
+}
+===============================================
