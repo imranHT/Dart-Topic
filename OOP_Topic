@@ -25,3 +25,44 @@ class MyClass{
 
 }
 ===============================================
+
+import"MyClass.dart";
+
+void main(){
+
+ var obj = MyClass();
+
+ print(obj.myName);
+ print(obj.myAge);
+print("----------------");
+ obj.addTwoNumber(10, 21);
+ obj.subTwoNumber(20, 5);
+ obj.mulTwoNumber(4, 5);
+ obj.divTwoNumber(90, 2);
+
+
+}
+
+subclass
+
+
+class MyClass{
+
+    var myName = "Imran Hasan";
+    var myAge = 24;
+
+    addTwoNumber(int x,int y){
+      print(x+y);
+    }
+    subTwoNumber(int a, int b){
+      print(a-b);
+    }
+    mulTwoNumber(int c,int d){
+      print(c*d);
+    }
+    divTwoNumber(int l, int m){
+      print(l/m);
+    }
+
+============================================
+
