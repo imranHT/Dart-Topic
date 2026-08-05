@@ -65,4 +65,19 @@ class MyClass{
     }
 
 ============================================
+import"MyClass.dart";
+void main(){
+var obj = Myclass();
+
+print(Myclass.myName);
+
+
+}
+subclass
+class Myclass {
+//static
+  static String myName = "Imran Hasan";
+
+
+}
 
