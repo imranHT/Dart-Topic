@@ -1,0 +1,125 @@
+//User Class
+
+class User{
+
+  final int id;
+  final String name;
+  final int phoneNumber;
+  final String email;
+
+
+  User({required this.id,
+        required this.name,
+       required this.phoneNumber,
+       required this.email
+        });
+
+}
+
+
+//Product Class
+
+
+import"User.dart";
+class Product {
+
+  final int id;
+  final String name;
+  final double price;
+  final User owner;
+
+
+  Product({
+    required this.id,
+    required this.name,
+    required this.price,
+    required this.owner,
+});
+
+}
+
+
+// main class
+
+
+
+import"Product.dart";
+import"User.dart";
+
+
+void main() {
+  print("===============================================");
+  print("Talukdar Gadget");
+  print("===============================================");
+  print("Your Dream Product in out place");
+  print("===============================================");
+  print("Sells");
+  print("===============================================");
+
+
+
+  List<User> users = [
+    User(id: 213,
+        name: "Imran Hasan",
+        phoneNumber: 019000000000,
+        email: "Imran@email.com"),
+    User(id: 413,
+        name: "Afsana Mimi",
+        phoneNumber: 014000000000,
+        email: "Afsana@email.com"),
+    User(id: 563,
+        name: "Habib Hasan",
+        phoneNumber: 013000000000,
+        email: "Habib@email.com"),
+    User(id: 343,
+        name: "Mahmuda Mim",
+        phoneNumber: 018000000000,
+        email: "Mim@email.com"),
+    User(id: 235,
+        name: "Shafiqul Islam",
+        phoneNumber: 017000000000,
+        email: "Shafi@email.com"),
+
+  ];
+
+  List<Product> products = [
+    Product(id: 23432,
+        name: "RTX 5090",
+        price: 150000.0,
+        owner: users[0]),
+
+    Product(
+        id: 32454,
+        name: "MacBook Pro m3",
+        price: 100000.0,
+        owner: users[1]),
+
+    Product(id: 25432,
+        name: "Asus 24 inch monitor",
+        price: 30000.0,
+        owner: users[2]),
+
+    Product(id: 56544,
+        name: "Asus TUF G5",
+        price: 114000.0,
+        owner:
+        users[3]),
+
+    Product(id: 12134,
+        name: "HyperX H4 HeadPhone",
+        price: 15000.0,
+        owner: users[4]),
+
+
+  ];
+
+
+  for (var product in products) {
+    print("Buyer : ${product.owner.name}");
+    print("Phone Number : ${product.owner.phoneNumber}");
+    print("Email Name : ${product.owner.email}");
+    print("Product : ${product.name}");
+    print("Price : ${product.price}");
+    print("===============================================");
+  }
+}
