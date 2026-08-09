@@ -104,4 +104,32 @@ void main(){
   boy.eat();
   boy.owa();
 }
+------------------------------------------
+
+// Inheritance
+ abstract class Father{
+
+  jomaTaka(){
+    print("Jomano Taka Ase 10 koti");
+  }
+}
+
+class Son extends Father{
+@override
+  jomaTaka() {
+    print("Jomano Taka Ase 5 koti");
+  }
+}
+
+
+void main(){
+
+  // var FatheObj = Father();
+  // FatheObj.jomaTaka();
+
+
+  var SonObj = Son();
+  SonObj.jomaTaka();
+
+}
 
