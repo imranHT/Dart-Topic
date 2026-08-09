@@ -80,4 +80,28 @@ class Myclass {
 
 
 }
+-------------------------------------------
+
+// Inheritance
+
+class Human{
+  String name = "Human";
+
+  void eat(){
+    print("$name is eating");
+  }
+}
+
+class Boy extends Human{
+  void owa(){
+    print("$name is crying");
+  }
+}
+
+void main(){
+  Boy boy = Boy();
+
+  boy.eat();
+  boy.owa();
+}
 
