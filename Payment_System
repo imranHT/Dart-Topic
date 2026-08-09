@@ -1,0 +1,88 @@
+//payment class
+
+abstract class Payment {
+  void pay(double amount);
+}
+
+//class bkash
+
+import"payment.dart";
+
+class Bkash extends Payment{
+  @override
+  void pay(double amount){
+    print("Paid $amount using Bkash Account");
+  }
+}
+
+//class mastercard
+
+import"payment.dart";
+
+class Mastercard extends Payment{
+
+  @override
+
+  void pay(double amount){
+    print("Paid $amount using Master Card");
+  }
+}
+
+
+//class nagad
+
+import"payment.dart";
+
+
+class Nagad extends Payment {
+
+
+  @override
+
+  void pay(amount){
+    print("Paid $amount using Nagad App");
+  }
+
+}
+
+
+//class Rocket
+import"payment.dart";
+
+
+class Nagad extends Payment {
+
+
+  @override
+
+  void pay(amount){
+    print("Paid $amount using Nagad App");
+  }
+
+}
+
+
+//Main class
+import"payment.dart";
+import"bkash.dart";
+import"masterCard.dart";
+import"nagad.dart";
+import"Rocket.dart";
+
+void main(){
+  
+  
+  Payment payment;
+  
+  payment = Bkash();
+  payment.pay(15000.00);
+  
+  payment = Mastercard();
+  payment.pay(100200.00);
+  
+  payment = Nagad();
+  payment.pay(500.00);
+  
+  payment = Rocket();
+  payment.pay(4500.00);
+}
