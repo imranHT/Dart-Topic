@@ -182,3 +182,22 @@ void main(){
   number.insert(7, 8);
   print(number);
 }
+
+----------------------------------------------------------
+
+
+//Debugging means finding, understanding, and fixing errors or bugs in a program.
+
+
+double calculateTotal(double price, int quantity){
+  return price * quantity;
+}
+
+void main(){
+  double price = 5005;
+  int quantity = 5;
+
+  double total = calculateTotal(price, quantity);
+  print("Total Is : $total")
+  ;
+}
