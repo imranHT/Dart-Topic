@@ -1,0 +1,112 @@
+
+
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+void main(){
+
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget{
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+   return MaterialApp(
+     theme: ThemeData(primarySwatch: Colors.blue),
+     darkTheme: ThemeData(primarySwatch: Colors.green),
+     color: Colors.red,
+    debugShowCheckedModeBanner: false,
+     home:const HomeActivity(),
+   );
+  }
+}
+
+class HomeActivity extends StatelessWidget{
+  const HomeActivity({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+  return Scaffold(
+    appBar: AppBar(
+      title: const Text("AZULA XXC",
+      style: TextStyle(
+        color: Colors.amberAccent,
+        fontSize: 40,
+        fontWeight: FontWeight.bold,
+      ),
+      ),
+      backgroundColor: Colors.green,
+      centerTitle: true,
+
+      actions: [
+        PopupMenuButton<String>(
+          onSelected: (value){
+            if(value == 'home'){
+              print("Home Clicked");
+            }
+            else if(value == 'about'){
+              print("About Clicked");
+            }
+            else if (value == 'settings'){
+              print("Settings Clicked");
+            }
+            else if(value == 'Imran'){
+              print("Imran Clicked");
+            }
+          },
+          itemBuilder: (context) => [
+            const PopupMenuItem(
+              value: 'home',
+              child: Text("Home"),
+            ),
+
+            const PopupMenuItem(
+              value: 'about',
+              child: Text("About"),
+            ),
+
+            const PopupMenuItem(
+              value: 'settings',
+              child: Text("Settings"),
+            ),
+            const PopupMenuItem(
+              value: 'Imran',
+              child: Text("Imran"),
+            )
+          ],
+        )
+      ],
+    ),
+  
+  
+  body: Container(
+    width: double.infinity,
+    height: double.infinity,
+    
+    decoration: const BoxDecoration(
+      image:  DecorationImage(
+        image: AssetImage("assets/iii.jpg"),
+        fit: BoxFit.cover,
+      )
+    ),
+
+
+
+    child: const Center(
+      child: Text(
+        "Imran Hasan Talukdar",
+        style: TextStyle(
+          color: Colors.purple,
+          fontSize: 20,
+          fontWeight: FontWeight.bold,
+        ),
+      )
+    ),
+  ),
+
+  );
+  }
+
+}
